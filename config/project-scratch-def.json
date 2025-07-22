@@ -1,0 +1,24 @@
+{
+  "orgName": "Agentforce Agent",
+  "edition": "Partner Developer",
+  "country": "US",
+  "language": "en_US",
+  "features": [
+    "EnableSetPasswordInApi",
+    "Einstein1AIPlatform",
+    "EinsteinGPTForDevelopers"
+  ],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": "true",
+      "enableUsersAreLightningOnly": "true",
+      "enableLexEndUsersNoSwitching": "true"
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": "false"
+    },
+    "einsteinGptSettings": {
+      "enableEinsteinGptPlatform": "true"
+    }
+  }
+}

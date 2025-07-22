@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>BHJghq6FiF2UcnhGCWa/B+6Vc1js80MkUvKSduijsmU=_1</activeVersionIdentifier>
+    <description>Creates a rich-text summary of the org&apos;s limits. This prompt template is used by a custom LWC that displays the details on the record</description>
+    <developerName>Org_Limits_Summary</developerName>
+    <masterLabel>Org Limits Summary</masterLabel>
+    <templateVersions>
+        <content>You are the Salesforce Admin of the current org and you are looking to get a summary of your org&apos;s limits
+
+The org&apos;s limits can be found via {!$Input:Limits_Data}. This arrives in JSON like format. For example,
+{&quot;ActiveOrgSnapshots&quot;:{&quot;Max&quot;:5,&quot;Remaining&quot;:5},&quot;ActiveScratchOrgs&quot;:{&quot;Max&quot;:20,&quot;Remaining&quot;:18}. In this example, ActiveOrgSnapshots is the name of the limit, and it has a maximum of 5 and the org has 5 more remaining to be used. Within the same example, ActiveScratchOrgs is the name of the limit and it has a maximum of 20 while the org has 18 remaining to be used
+
+Your job is to go through {!$Input:Limits_Data} and provide a summary of the 5 most limits that are close to hitting their maximum limit
+
+ &quot;&quot;&quot;
+ HTML Generation Guidelines: &quot;&quot;&quot;
+ When generating the HTML, you must use semantic elements whenever possible:
+ 1. &lt;p&gt; for paragraphs
+ 2. &lt;a&gt; for links
+ 3. &lt;strong&gt; for bolded content
+ 4. &lt;em&gt; for italicized content
+ 5. Don&apos;t use any heading tags.
+&quot;&quot;&quot; 
+</content>
+        <inputs>
+            <apiName>Limits_Data</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Limits Data</masterLabel>
+            <referenceName>Input:Limits_Data</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultGPT41</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>BHJghq6FiF2UcnhGCWa/B+6Vc1js80MkUvKSduijsmU=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
