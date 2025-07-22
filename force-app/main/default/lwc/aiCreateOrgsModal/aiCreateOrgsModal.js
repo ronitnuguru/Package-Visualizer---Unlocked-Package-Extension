@@ -9,8 +9,6 @@ export default class AiCreateOrgsModal extends LightningModal  {
     agentPrompt;
     parsedContent;
 
-
-
     connectedCallback(){
         this.parsedContent = JSON.parse(this.content);
 
