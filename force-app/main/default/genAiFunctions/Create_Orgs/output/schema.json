@@ -6,7 +6,7 @@
       "description" : "Custom LWC Lightning Type resonse",
       "maxItems" : 2000,
       "items" : {
-        "lightning:type" : "pkgviz__createOrgsResponse"
+        "lightning:type" : "c__createOrgsResponse"
       },
       "lightning:type" : "lightning__listType",
       "lightning:isPII" : false,
