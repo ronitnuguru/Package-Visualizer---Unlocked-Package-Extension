@@ -1,6 +1,8 @@
 {
-  "orgName": "Agentforce Agent",
+  "orgName": "Agentforce",
   "edition": "Partner Developer",
+  "hasSampleData": true,
+  "release": "current",
   "country": "US",
   "language": "en_US",
   "features": [

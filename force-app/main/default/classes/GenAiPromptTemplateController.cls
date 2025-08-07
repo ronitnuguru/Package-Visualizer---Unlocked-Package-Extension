@@ -31,6 +31,7 @@ global with sharing class GenAiPromptTemplateController implements Callable {
         // Set additional configuration values
         promptGenerationsInput.additionalConfig = new ConnectApi.EinsteinLlmAdditionalConfigInput();
         promptGenerationsInput.additionalConfig.applicationName = 'PromptTemplateGenerationsInvocable';
+        //promptGenerationsInput.citationMode = 'post_generation';
 
         try {
             // Call the service
