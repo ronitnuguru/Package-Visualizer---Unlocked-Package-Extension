@@ -12,6 +12,10 @@
         <apexClass>GenAiPromptTemplateController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <agentAccesses>
+        <agentName>ISV_Agent</agentName>
+        <enabled>true</enabled>
+    </agentAccesses>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Package Visualizer Agentforce Permission</label>
 </PermissionSet>
